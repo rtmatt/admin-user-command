@@ -9,7 +9,7 @@
   ],
   "autoload": {
     "psr-4": {
-      "\\RTMatt\\AdminUserCommand": "src/"
+      "\\RTMatt\\AdminUserCommand\\": "src/"
     }
   },
   "require": {
