@@ -1,4 +1,6 @@
 # Admin User Creation Command
+Create admin users quickly on the command line
+
 ## Installation
 ### Install Dependencies
 ``` bash 
