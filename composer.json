@@ -11,8 +11,5 @@
     "psr-4": {
       "\\RTMatt\\AdminUserCommand\\": "src/"
     }
-  },
-  "require": {
-    "illuminate/console": "5.2.*"
   }
 }
