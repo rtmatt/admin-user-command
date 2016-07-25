@@ -43,7 +43,10 @@ class AdminUserMake extends Command
         $name = $this->ask('What is the user\'s name?');
         $email = $this->ask('What is the user\'s email address?');
         $permission_level = $this->ask('What is the user\'s permission level?');
-        $original_password = str_random(8);
+        $original_password  = $this->ask('What should their password be?(Blank for automatic)');
+        if(!$original_password){
+            $original_password = str_random(8);
+        }
         $password = \Hash::make($original_password);
         $args = compact('name','email','password','permission_level');
         if ($this->confirm("Making User {$name}<{$email}>.  Continue? [y|N]")) {
